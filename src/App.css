@@ -1,0 +1,45 @@
+.app {
+  width: 100%;
+  max-width: 640px;
+  min-width: 360px;
+  margin: 50px auto;
+}
+
+@media (max-width: 1400px) {
+  .app {
+    max-width: 600px;
+    margin: 20px auto;
+  }
+}
+
+@media (max-width: 575px) {
+  .app {
+    margin-top: 0px;
+    min-width: 300px;
+  }
+}
+
+.text-center {
+  text-align: center;
+}
+
+
+.btn{
+    font-size: 14px;
+    display: inline-block;
+    height: 36px;
+    min-width: 88px;
+    padding: 6px 16px;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    touch-action: manipulation;
+    cursor: pointer;
+    user-select: none;
+    border: 0;
+    border-radius: 2px;
+    background: #2196f3;
+    color: #fff;
+    outline: 0;
+  }

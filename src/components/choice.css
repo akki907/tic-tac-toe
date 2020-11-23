@@ -1,0 +1,107 @@
+.choice {
+    background-color: #fff;
+    padding: 1em;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+  }
+  
+  
+  .choice>ul {
+    list-style-type: none;
+    padding-left: 0;
+  }
+
+  .choice>h1{
+    padding: 1em 0em;
+    font-size: 1em;
+    text-align: center;
+  }
+  
+  .choice>ul>li {
+    display: inline-block;
+    padding: 10px 15px;
+    margin-left: -1px;
+    width: 160px;
+    font-family: monospace;
+    font-size: 1em;
+    border-radius: 50px;
+    transition: all .4s;
+    text-transform: uppercase;
+    border: 2px solid #336FFD;
+  }
+  
+  .choice>ul>li:first-child {
+    border-radius: 3px 0px 0px 3px;
+  }
+  
+  .choice>ul>li:last-child {
+    border-radius: 0px 3px 3px 0px;
+  }
+  
+  .choice>ul>li:not(.active):hover {
+    background: #336FFD;
+    cursor: pointer;
+    color: #fff;
+  }
+  
+  .choice>ul>li.active {
+    background-color: #000;
+    color: #fff;
+  }
+  
+  .choice>ul>li.active:hover {
+    cursor: default;
+  }
+  
+  .choice>div>button {
+    background-color: #2ab7ca;
+    color: #fff;
+    border: none;
+    outline: none;
+    padding: 10px 15px;
+    margin: 0 auto;
+    border-radius: 3px;
+    font-size: 1rem;
+    margin-top: 15px;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 4px 15px 0px;
+  }
+  
+  .choice>div>button:hover {
+    cursor: pointer;
+  }
+  
+  .choice>div>button:active {
+    box-shadow: none;
+  }
+  
+  @media (max-width: 1400px) {
+    .choice {
+      padding: 5px 0 25px;
+    }
+    .choice>h1{
+      font-size: 2rem;
+      margin-bottom: 0px;
+    }
+    .choice>ul>li {
+      padding: 5px;
+    }
+    .choice>div>button{
+      padding: 8px 12px;
+    }
+  }
+  
+  @media (max-width: 575px) {
+    .choice {
+      padding: 20px 0;
+    }
+    .choice>h1{
+      font-size: 2rem;
+    }
+    .choice>ul>li {
+      border-radius: 3px;
+      margin-top: 10px;
+    }
+  }
